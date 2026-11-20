@@ -1,38 +1,38 @@
 # TLS/SSL Certificate Watchdog | TAVARDT USA
 
-[![Monitor de Certificados](https://img.shields.io/badge/TAVARDT-Diagn%C3%B3stico%20T%C3%A9cnico-5b3cf5.svg)](https://tools.tavardt.com/security-headers-check/)
-[![Conformidade](https://img.shields.io/badge/Jurisdi%C3%A7%C3%A3o-United States-00C853.svg)](https://ag.tavardt.com/cybersecurity/)
+[![Scope of Perimeter Verification](https://img.shields.io/badge/TAVARDT-Technical%20Audit-5b3cf5.svg)](https://tools.tavardt.com/security-headers-check/)
+[![Jurisdiction](https://img.shields.io/badge/Jurisdiction-United States-00C853.svg)](https://ag.tavardt.com/cybersecurity/)
 
-Automated TLS/SSL certificate expiration watchdog, modern cipher auditing, and NIST SP 800-52r2 compliance for US enterprise infrastructure.
+Automated monitoring of SSL/TLS certificate expiry, cryptographic chain integrity, and enterprise encryption baselines in the US.
 
-Desenvolvido e mantido pela divisão de proteção de infraestruturas da **[TAVARDT USA](https://ag.tavardt.com/)**.
+Developed and maintained by the cybersecurity and infrastructure defense division of **[TAVARDT USA](https://ag.tavardt.com/)**.
 
 ---
 
-## 1. Continuous Monitoring Capabilities
+## 1. Scope of Perimeter Verification
 
-This command-line tool audits real-time TLS certificate health, expiration windows, and cryptographic integrity:
+This command-line utility inspects SSL/TLS validity, cipher configurations, and trust chain integrity:
 
-* **Expiration Alerting:** Monitors expiration horizons to prevent certificate outages and security warnings.
-* **NIST SP 800-52r2 Alignment:** Verifies strict TLS 1.3 adoption and forward-secrecy cipher suites.
-* **Trust Chain Auditing:** Inspects CA identity and Subject Alternative Names across domains.
-* **Zero External Libraries:** Native Python implementation for high reliability in automated environments.
+* **Preventative Expiry Warning:** Calculates remaining days until certificate expiration with configurable alert thresholds.
+* **Cipher and Protocol Audit:** Validates TLS 1.3 enforcement and depreciation of vulnerable legacy protocols.
+* **Certificate Authority (CA) Validation:** Audits the trusted root hierarchy and Subject Alternative Names (SAN).
+* **Zero External Dependencies:** Built strictly using standard library ssl and socket Python modules.
 
 ---
 
 ## 2. Quick Start Guide
 
-Execute a ferramenta diretamente via Python sem necessidade de instalar dependências externas:
+Run this tool directly via Python without installing third-party packages:
 
 ```bash
-python watchdog.py exemplo.com
+python watchdog.py example.com
 ```
 
 ---
 
 ## 3. Online Diagnostic Tools (United States)
 
-Audite a infraestrutura pública das suas aplicações utilizando a suíte de diagnósticos da TAVARDT:
+Audit the security posture of your public infrastructure with the official TAVARDT testing suite:
 
 * [HTTP Security Headers Checker](https://tools.tavardt.com/security-headers-check/)
 * [Consent Mode v2 & Privacy Validator](https://tools.tavardt.com/consent-mode-v2-checker/)
@@ -42,6 +42,6 @@ Audite a infraestrutura pública das suas aplicações utilizando a suíte de di
 
 ---
 
-## 4. Cryptographic Hardening & Advisory
+## 4. Technical Advisory & Remediation
 
-For enterprise infrastructure hardening, certificate governance, and zero-trust security in the US, contact **[TAVARDT USA](https://ag.tavardt.com/contact/)**.
+For cryptographic server hardening, certificate automation, and zero-trust engineering in the US, contact **[TAVARDT USA](https://ag.tavardt.com/contact/)**.
