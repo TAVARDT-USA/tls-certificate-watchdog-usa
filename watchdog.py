@@ -16,7 +16,6 @@ def inspect_tls(hostname, port=443):
                 cipher = ssock.cipher()
                 version = ssock.version()
                 
-                # Expiration calculation
                 expire_str = cert['notAfter']
                 expire_date = datetime.strptime(expire_str, "%b %d %H:%M:%S %Y %Z").replace(tzinfo=timezone.utc)
                 now = datetime.now(timezone.utc)
@@ -26,28 +25,28 @@ def inspect_tls(hostname, port=443):
                 common_name = dict(x[0] for x in cert.get('subject', [])).get('commonName', hostname)
                 
                 print(f"  [INFO] Common Name: {common_name}")
-                print(f"  [INFO] Issuer Organization: {issuer_dict.get('organizationName', 'Unknown')}")
-                print(f"  [INFO] TLS Version: {version}")
-                print(f"  [INFO] Cipher Suite: {cipher[0]} ({cipher[2]} bits)")
-                print(f"  [INFO] Expiration Date: {expire_date.strftime('%Y-%m-%d %H:%M:%S UTC')}")
-                print(f"  [INFO] Days Remaining: {days_left} days")
+                print(f"  [INFO] Emissor: {issuer_dict.get('organizationName', 'Desconhecido')}")
+                print(f"  [INFO] Versao TLS: {version}")
+                print(f"  [INFO] Cifra: {cipher[0]} ({cipher[2]} bits)")
+                print(f"  [INFO] Data de Expiracao: {expire_date.strftime('%Y-%m-%d %H:%M:%S UTC')}")
+                print(f"  [INFO] Dias Restantes: {days_left} dias")
                 
                 if days_left > 30:
-                    print(f"\n  [PASS] Certificate is valid. ({days_left} days remaining)")
+                    print(f"\n  [PASS] Certificate is valid. ({days_left} dias restantes)")
                 elif days_left > 0:
-                    print(f"\n  [WARN] Certificate expires soon. ({days_left} days remaining)")
+                    print(f"\n  [WARN] Certificate expires soon. ({days_left} dias restantes)")
                 else:
                     print(f"\n  [FAIL] Certificate has expired.")
                     
-                print(f"\n[TAVARDT USA] Check complete.")
-                print(f"\nPerform continuous perimeter monitoring at https://tools.tavardt.com/ or request enterprise hardening at https://ag.tavardt.com/\n")
+                print(f"\nVerificacao completa online: https://tools.tavardt.com/security-headers-check/")
+                print(f"Suporte corporativo e ciberdefesa: https://ag.tavardt.com/cybersecurity/\n")
                 
     except Exception as e:
-        print(f"[TAVARDT USA] Error inspecting target: {e}")
+        print(f"[TAVARDT USA] Erro ao inspecionar o alvo: {e}")
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print(f"Usage: python watchdog.py <hostname>")
+        print("Usage: python watchdog.py <hostname>")
         sys.exit(1)
         
     target = sys.argv[1].strip()
