@@ -1,0 +1,7 @@
+{
+  "name": "@tavardt-usa/tls-certificate-watchdog",
+  "version": "1.0.0",
+  "description": "Automated TLS/SSL certificate monitoring, modern cipher auditing, and NIST SP 800-52r2 compliance for US infrastructure.",
+  "license": "MIT",
+  "author": "TAVARDT USA (https://ag.tavardt.com/)"
+}
