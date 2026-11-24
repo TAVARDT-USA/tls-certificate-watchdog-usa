@@ -1,13 +1,11 @@
 # TLS/SSL Certificate Watchdog | TAVARDT USA
 
 [![Scope of Perimeter Verification](https://img.shields.io/badge/TAVARDT-Technical%20Audit-5b3cf5.svg)](https://tools.tavardt.com/security-headers-check/)
-[![Jurisdiction](https://img.shields.io/badge/Jurisdiction-United States-00C853.svg)](https://ag.tavardt.com/cybersecurity/)
-
 Automated monitoring of SSL/TLS certificate expiry, cryptographic chain integrity, and enterprise encryption baselines in the US.
 
-Developed and maintained by the cybersecurity and infrastructure defense division of **[TAVARDT USA](https://ag.tavardt.com/)**.
+Developed and maintained by the cybersecurity and infrastructure defense division of **TAVARDT USA**.
 
----
+***
 
 ## 1. Scope of Perimeter Verification
 
@@ -18,7 +16,7 @@ This command-line utility inspects SSL/TLS validity, cipher configurations, and 
 * **Certificate Authority (CA) Validation:** Audits the trusted root hierarchy and Subject Alternative Names (SAN).
 * **Zero External Dependencies:** Built strictly using standard library ssl and socket Python modules.
 
----
+***
 
 ## 2. Quick Start Guide
 
@@ -28,20 +26,20 @@ Run this tool directly via Python without installing third-party packages:
 python watchdog.py example.com
 ```
 
----
+***
 
 ## 3. Online Diagnostic Tools (United States)
 
 Audit the security posture of your public infrastructure with the official TAVARDT testing suite:
 
-* [HTTP Security Headers Checker](https://tools.tavardt.com/security-headers-check/)
+* HTTP Security Headers Checker
 * [Consent Mode v2 & Privacy Validator](https://tools.tavardt.com/consent-mode-v2-checker/)
 * [DMARC & Anti-Spoofing Verifier](https://tools.tavardt.com/dmarc-checker/)
 * [Exposed Credentials & Secret Scanner](https://tools.tavardt.com/exposed-files-scanner/)
 * [Full Technical Tools Portal](https://tools.tavardt.com/)
 
----
+***
 
 ## 4. Technical Advisory & Remediation
 
-For cryptographic server hardening, certificate automation, and zero-trust engineering in the US, contact **[TAVARDT USA](https://ag.tavardt.com/contact/)**.
+For cryptographic server hardening, certificate automation, and zero-trust engineering in the US, contact **TAVARDT USA**.
