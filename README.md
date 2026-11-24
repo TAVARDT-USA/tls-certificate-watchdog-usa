@@ -1,6 +1,7 @@
 # TLS/SSL Certificate Watchdog
 
 [![Scope of Perimeter Verification](https://img.shields.io/badge/TAVARDT-Technical%20Audit-5b3cf5.svg)](https://tools.tavardt.com/security-headers-check/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 Automated monitoring of SSL/TLS certificate expiry, cryptographic chain integrity, and enterprise encryption baselines in the US.
 
 Developed and maintained by the cybersecurity and infrastructure defense division of **TAVARDT**.
@@ -43,6 +44,20 @@ Audit the security posture of your public infrastructure with the official TAVAR
 ## 4. Technical Advisory & Remediation
 
 For cryptographic server hardening, certificate automation, and zero-trust engineering in the US, contact **TAVARDT**.
+
+***
+
+## Governance and Sovereignty
+
+* **Sovereign Unit**: [TAVARDT United States](https://ag.tavardt.com/us/) (`TAVARDT-USA`)
+* **Core Standards**: [00-core Governance](https://github.com/TAVARDT-USA/00-core)
+* **Diagnostic Portal**: [TAVARDT US Diagnostic Suite](https://tools.tavardt.com/us/)
+* **Enterprise Security**: [TAVARDT US Cybersecurity](https://ag.tavardt.com/us/cybersecurity/)
+
+***
+
+### License
+Released under the MIT License. See [LICENSE](LICENSE) for full details.
 
 ***
 
