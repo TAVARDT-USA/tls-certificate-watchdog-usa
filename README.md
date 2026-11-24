@@ -1,4 +1,4 @@
-# TLS/SSL Certificate Watchdog | TAVARDT USA
+# TLS/SSL Certificate Watchdog
 
 [![Scope of Perimeter Verification](https://img.shields.io/badge/TAVARDT-Technical%20Audit-5b3cf5.svg)](https://tools.tavardt.com/security-headers-check/)
 Automated monitoring of SSL/TLS certificate expiry, cryptographic chain integrity, and enterprise encryption baselines in the US.
@@ -43,3 +43,7 @@ Audit the security posture of your public infrastructure with the official TAVAR
 ## 4. Technical Advisory & Remediation
 
 For cryptographic server hardening, certificate automation, and zero-trust engineering in the US, contact **TAVARDT USA**.
+
+***
+
+© 2026 TAVARDT. All rights reserved.
